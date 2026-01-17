@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/apsbundela/frm-testimonials-grid-section-card)
-- Live Site URL: (https://apsbundela.github.io/frm-testimonials-grid-section-)
+- Live Site URL: (https://apsbundela.github.io/frm-testimonials-grid-section-card/)
 
 ## My process
 
