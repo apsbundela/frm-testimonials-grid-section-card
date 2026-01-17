@@ -1,0 +1,184 @@
+:root {
+
+--Purple-50: hsl(260, 100%, 95%);
+--Purple-300: hsl(264, 82%, 80%);
+--Purple-500: hsl(263, 55%, 52%);
+
+--White: hsl(0, 0%, 100%);
+--Grey-100: hsl(214, 17%, 92%);
+--Grey-200: hsl(0, 0%, 81%);
+--Grey-400: hsl(224, 10%, 45%);
+--Grey-500: hsl(217, 19%, 35%);
+--Dark-blue: hsl(219, 29%, 14%);
+--Black: hsl(0, 0%, 7%);
+
+}
+
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+*:not(dialog) {
+  margin: 0;
+}
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+body {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    line-height: 1.2;
+    background: var(--Grey-100);
+}
+
+img {
+    border-radius: 50%;
+}
+
+.testimonial-container {
+    max-width: 1100px;
+    margin: 1.5rem;
+
+    display: grid;
+    /* place-content: center; */
+    gap: 1.5rem;
+}
+
+.testimonial-card {
+    padding: 1.25rem;
+    border-radius: 0.725rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.daniel-card {
+    background: var(--Purple-500);
+    color: var(--White);
+}
+
+.profile {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.profile-name {
+    font-size: 1.22rem;
+    font-weight: 500;
+}
+
+.profile-designation {
+    font-size: 0.925rem;
+    font-weight: 400;
+}
+
+.achievment {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.carrer-journey {
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.jonathan-card {
+    background: var(--Grey-500);
+    color: var(--Grey-100);
+}
+
+.jeanette-card {
+    background: var(--White);
+    color: var(--Black);
+}
+
+.patrick-card {
+    background: var(--Dark-blue);
+    color: var(--Grey-200);
+}
+
+.kira-card {
+    background: var(--White);
+    color: var(--Dark-blue);
+}
+
+@media (min-width:770px){
+    .testimonial-container {
+        margin-top: 5rem;
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .daniel-card {
+        grid-row: 1;
+        grid-column: 1/ span 2;
+    }
+    .jonathan-card {
+        grid-row: 1;
+        grid-column: 3;
+    }
+
+    .jeanette-card {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    .patrick-card {
+        grid-row: 2;
+        grid-column: 2/ span 2;
+    }
+
+    .kira-card {
+        grid-row: 1 / span 2;
+        grid-column: 4;
+    }
+    
+}
+
+
